@@ -4,7 +4,7 @@ import { CounterContext } from './context';
 import { data } from './data';
 import { reducer } from './reducer';
 
-export const CounterProvider = ({ children }) => {
+export const CounterProvider = ({ children }:any) => {
   const [counterState, counterDispatch] = useReducer(reducer, data);
 
   return (
