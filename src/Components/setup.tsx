@@ -13,9 +13,6 @@ import { CounterContext } from '../Context/context'
 import { Link } from 'react-router-dom'
 
 export default function Setup() {
-  const [ trabalho,setTrabalho ] = useState<number>(25)
-  const [ pausa,setPausa ] = useState<number>(5)
-  const [ sessoes,setSessoes ] = useState<number>(2)
 
   const counterContext = useContext(CounterContext);
   const { counterState, counterDispatch } = counterContext;
@@ -28,10 +25,10 @@ export default function Setup() {
         <div className='p-9 flex justify-center items-center'>
           <div className='flex flex-col justify-center items-center mr-4'>
             <button className='' onClick={() => incrementTrabalho(counterDispatch)}>
-              <ArrowCircleUp size={40} color="rgb(21 128 61)" weight="bold" />
+              <ArrowCircleUp size={40} color="#04D361" weight="bold" />
             </button>
             <button className='' onClick={() => decrementTrabalho(counterDispatch)}>
-              <ArrowCircleDown size={40} color="rgb(21 128 61)" weight="bold" />
+              <ArrowCircleDown size={40} color="#04D361" weight="bold" />
             </button>
           </div>
           <div className='flex flex-col justify-center items-center'>
@@ -42,10 +39,10 @@ export default function Setup() {
         <div className='p-9 flex justify-center items-center'>
           <div className='flex flex-col justify-center items-center mr-4'>
             <button className='' onClick={() => incrementPausa(counterDispatch)}>
-              <ArrowCircleUp size={40} color="rgb(21 128 61)" weight="bold" />
+              <ArrowCircleUp size={40} color="#04D361" weight="bold" />
             </button>
             <button className='' onClick={() => decrementPausa(counterDispatch)}>
-              <ArrowCircleDown size={40} color="rgb(21 128 61)" weight="bold" />
+              <ArrowCircleDown size={40} color="#04D361" weight="bold" />
             </button>
           </div>
           <div className='flex flex-col justify-center items-center'>
@@ -56,10 +53,10 @@ export default function Setup() {
         <div className='p-9 flex justify-center items-center'>
           <div className='flex flex-col justify-center items-center mr-4'>
             <button className='' onClick={() => incrementSessao(counterDispatch)}>
-              <ArrowCircleUp size={40} color="rgb(21 128 61)" weight="bold" />
+              <ArrowCircleUp size={40} color="#04D361" weight="bold" />
             </button>
             <button className='' onClick={() => decrementSessao(counterDispatch)}>
-              <ArrowCircleDown size={40} color="rgb(21 128 61)" weight="bold" />
+              <ArrowCircleDown size={40} color="#04D361" weight="bold" />
             </button>
           </div>
           <div className='flex flex-col justify-center items-center'>

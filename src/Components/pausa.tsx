@@ -12,7 +12,7 @@ export default function Pausa() {
   const counterContext = useContext(CounterContext);
   const { counterState, counterDispatch } = counterContext;
 
-  const [progress, setProgress] = useState()
+  const [progress, setProgress] = useState(0)
 
   const navigate = useNavigate()
 
@@ -32,8 +32,8 @@ export default function Pausa() {
     },
   });
 
-  const [min, setMin] = useState<number>()
-  const [seg, setSeg] = useState<number>()
+  const [min, setMin] = useState(0)
+  const [seg, setSeg] = useState(0)
 
   useEffect(() => {
     updateTime()
@@ -41,7 +41,7 @@ export default function Pausa() {
   }, [time])
 
   function updateTime(){
-    setMin(parseInt(time / 60)),
+    setMin(parseInt(`${time / 60}`)),
     setSeg(time % 60)
   }
   
