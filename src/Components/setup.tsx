@@ -24,10 +24,14 @@ export default function Setup() {
       <div className='flex sm:flex-row flex-col sm:mt-6'>
         <div className='p-9 flex justify-center items-center'>
           <div className='flex flex-col justify-center items-center mr-4'>
-            <button className='' onClick={() => incrementTrabalho(counterDispatch)}>
+            <button 
+              className='' 
+              onClick={() => incrementTrabalho(counterDispatch)}>
               <ArrowCircleUp size={40} color="#04D361" weight="bold" />
             </button>
-            <button className='' onClick={() => decrementTrabalho(counterDispatch)}>
+            <button 
+              className='' 
+              onClick={() => {if(counterState.trabalho > 0){{decrementTrabalho(counterDispatch)}}}}>
               <ArrowCircleDown size={40} color="#04D361" weight="bold" />
             </button>
           </div>
@@ -38,10 +42,14 @@ export default function Setup() {
         </div>
         <div className='p-9 flex justify-center items-center'>
           <div className='flex flex-col justify-center items-center mr-4'>
-            <button className='' onClick={() => incrementPausa(counterDispatch)}>
+            <button 
+              className='' 
+              onClick={() => incrementPausa(counterDispatch)}>
               <ArrowCircleUp size={40} color="#04D361" weight="bold" />
             </button>
-            <button className='' onClick={() => decrementPausa(counterDispatch)}>
+            <button 
+              className='' 
+              onClick={() => {if(counterState.pausa > 0){{decrementPausa(counterDispatch)}}}}>
               <ArrowCircleDown size={40} color="#04D361" weight="bold" />
             </button>
           </div>
@@ -52,10 +60,14 @@ export default function Setup() {
         </div>
         <div className='p-9 flex justify-center items-center'>
           <div className='flex flex-col justify-center items-center mr-4'>
-            <button className='' onClick={() => incrementSessao(counterDispatch)}>
+            <button 
+              className='' 
+              onClick={() => incrementSessao(counterDispatch)}>
               <ArrowCircleUp size={40} color="#04D361" weight="bold" />
             </button>
-            <button className='' onClick={() => decrementSessao(counterDispatch)}>
+            <button 
+              className='' 
+              onClick={() => {if(counterState.sessao > 1){{decrementSessao(counterDispatch)}}}}>
               <ArrowCircleDown size={40} color="#04D361" weight="bold" />
             </button>
           </div>
