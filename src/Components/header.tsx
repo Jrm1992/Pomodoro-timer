@@ -15,8 +15,8 @@ export default function Header() {
         </Link>
       </div>
       <div className='m-auto sm:pr-44  flex flex-row'>
-        <h3 className='font-bold mr-4 text-4xl text-blue-500'>Pomodoro</h3>
-        <Timer size={48} color="#04D361" weight="fill" />
+        <h3 className='font-bold mr-4 text-4xl text-[#04D361]'>Pomodoro</h3>
+        <Timer size={40} color="#04D361" weight="bold" />
       </div>
     </div>
   )

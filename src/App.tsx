@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom"
+import Footer from "./Components/footer"
 import Header from "./Components/header"
 import { CounterProvider } from "./Context"
-import Home from "./Pages/Home"
 import Router from "./Router"
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Router />
+        <Footer />
       </BrowserRouter>
     </CounterProvider>
   )

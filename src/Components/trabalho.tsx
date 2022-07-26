@@ -34,7 +34,7 @@ export default function Trabalho() {
   } });
 
   return (
-    <div className='flex flex-col mt-20 justify-center items-center'>
+    <div className='flex flex-col mt-20 h-full justify-center items-center'>
       <h3 className='mt-9 font-bold sm:text-7xl text-5xl text-blue-500'>Work Time!</h3>
       <div className='flex shadow-md shadow-gray-700 bg-gray-800 flex-col justify-center items-center sm:w-[30%] w-[85%] rounded-2xl m-5 h-[250px]'>
         <p className='bg-gray-800 text-slate-200 mb-10 text-9xl font-bold'>
