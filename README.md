@@ -7,7 +7,7 @@
   </p>
 
   # <a target="_blank" href="https://jrm1992-pomodoro.netlify.app/">Live Demo</a>
-  [link](https://jrm1992-pomodoro.netlify.app/){:target="_blank"}
+ 
 
   # Techs:
 
