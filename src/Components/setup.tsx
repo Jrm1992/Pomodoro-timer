@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import { useContext, useEffect } from 'react'
 import { ArrowCircleDown, ArrowCircleUp } from 'phosphor-react'
 
 import {
@@ -16,6 +16,10 @@ export default function Setup() {
 
   const counterContext = useContext(CounterContext);
   const { counterState, counterDispatch } = counterContext;
+
+  useEffect(() => {
+    document.title = `Pomodoro`;
+  }, []);
 
   return (
     <div className='flex flex-col mt-20 justify-center items-center'>
@@ -36,7 +40,7 @@ export default function Setup() {
             </button>
           </div>
           <div className='flex flex-col justify-center items-center'>
-            <p className='sm:text-8xl text-5xl mb-4 font-bold text-gray-400 '>{counterState.trabalho}</p>
+            <p className='sm:text-8xl text-5xl mb-4 font-bold text-gray-400 '>{counterState.trabalho < 10 ? 0 : ''}{counterState.trabalho}</p>
             <p className='sm:text-2xl text-lg font-bold text-gray-400 '>Trabalho</p>
           </div>
         </div>
@@ -54,7 +58,7 @@ export default function Setup() {
             </button>
           </div>
           <div className='flex flex-col justify-center items-center'>
-            <p className='sm:text-8xl text-5xl font-bold text-gray-400 '>{counterState.pausa}</p>
+            <p className='sm:text-8xl text-5xl font-bold text-gray-400 '>{counterState.pausa < 10 ? 0 : ''}{counterState.pausa}</p>
             <p className='sm:text-2xl text-lg font-bold text-gray-400 '>Pausa</p>
           </div>
         </div>
@@ -72,7 +76,7 @@ export default function Setup() {
             </button>
           </div>
           <div className='flex flex-col justify-center items-center'>
-            <p className='sm:text-8xl text-5xl mb-4 font-bold text-gray-400 '>{counterState.sessao}</p>
+            <p className='sm:text-8xl text-5xl mb-4 font-bold text-gray-400 '>{counterState.sessao < 10 ? 0 : ''}{counterState.sessao}</p>
             <p className='sm:text-2xl text-lg font-bold text-gray-400 '>Sessoes</p>
           </div>
         </div>
