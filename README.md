@@ -19,7 +19,7 @@
 # Autor:
 ---
 
- <img style="border-radius:50%;" src="https://avatars.githubusercontent.com/u/103078485?v=4" width="100px;" alt=""/>
+ <img style="border-radius:50%" src="https://avatars.githubusercontent.com/u/103078485?v=4" width="100px;" alt=""/>
  <br />
 
 
