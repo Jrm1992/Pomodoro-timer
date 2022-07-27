@@ -10,7 +10,7 @@
 
   # Techs:
 
-  -![image]([BadgeURLAqui](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)) React
+  - ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)             
   - Typescript
   - Tailwind
   - Phosphor Icon
