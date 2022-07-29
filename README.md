@@ -27,4 +27,3 @@
 Feito com ❤️ por Jose Roberto Marques 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Jose%20Roberto-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/jos%c3%a9-roberto-marques-de-s%c3%a1-62a57023b/)
- 
