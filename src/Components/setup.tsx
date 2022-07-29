@@ -22,7 +22,7 @@ export default function Setup() {
   }, []);
 
   return (
-    <div className='flex flex-col mt-20 justify-center items-center'>
+    <div className='flex flex-col xl:mt-20 justify-center items-center'>
       <h3 className='mt-9 font-bold sm:text-7xl text-5xl text-blue-500'>Setup Options</h3>
 
       <div className='flex sm:flex-row flex-col sm:mt-6'>
