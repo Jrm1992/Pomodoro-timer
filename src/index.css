@@ -5,6 +5,7 @@
 *{
   background-color: #121214;
   -webkit-font-smoothing: antialiased;
+  transition: all 0.3s ease;
 }
 p, h3, footer, button{
   user-select: none;
