@@ -50,9 +50,9 @@ export default function Trabalho() {
 
   return (
     <div className='flex flex-col mt-4 md:mt-8 lg:mt-12 justify-center items-center'>
-      <h3 className='mt-9 font-bold sm:text-7xl text-5xl text-blue-500'>Take a Break!</h3>
-      <div className='flex shadow-md shadow-gray-700 bg-gray-800 flex-col justify-center items-center sm:w-[35%] w-[85%] rounded-2xl m-5 h-[200px] sm:h-[2400px] md:h-[260px] lg:h-[300px] xl:h-[320px]'>
-        <p className='bg-gray-800 text-slate-200 mb-10 text-7xl md:text-9xl lg:text-[168px] font-bold'>
+      <h3 className='xl:mt-9  font-bold sm:text-5xl lg:text-6xl xl:text-7xl text-4xl text-blue-500'>Take a Break!</h3>
+      <div className='flex shadow-md shadow-gray-700 bg-gray-800 flex-col justify-center items-center sm:w-[35%] xl:w-[32%] w-[85%] rounded-2xl m-5 h-[200px] sm:h-[2400px] md:h-[260px] xl:h-[340px]'>
+        <p className='bg-gray-800 text-slate-200 mb-10 text-7xl md:text-9xl xl:text-[168px] font-bold'>
         {minutes < 10 ? 0 : ''}{minutes}:{seconds < 10 ? 0 : ''}{seconds}
         </p>
         <Box sx={{ width: '90%' }}>
@@ -61,15 +61,15 @@ export default function Trabalho() {
             value={((minutes * 60 + seconds) / (counterState.pausa * 60)) * 100 } />
         </Box>
       </div>
-      <div className='sm:w-[35%] w-[85%] flex justify-between'>
+      <div className='sm:w-[35%] xl:w-[32%] w-[85%] flex justify-between'>
         <button 
-          className='sm:text-4xl shadow-md shadow-gray-700 mb-4 font-bold text-gray-400 bg-gray-800 rounded-xl px-4 md:px-8 lg:px-10 xl:px-14 py-2 hover:bg-gray-700 hover:text-green-300 '
+          className='text-xl sm:text-2xl md:text-3xl xl:text-4xl shadow-md shadow-gray-700 mb-4 font-bold text-gray-400 bg-gray-800 rounded-xl px-6 md:px-8 lg:px-10 2xl:px-14 py-2 md:py-3 xl:py-5 2xl:py-7 hover:bg-gray-700 hover:text-green-300 '
           onClick={isRunning ? pause : resume}
         >
           {isRunning ? "PAUSE" : "RESUME"} 
         </button>
         <button 
-          className='sm:text-4xl shadow-md shadow-gray-700 mb-4 font-bold text-gray-400 bg-gray-800 rounded-xl px-4 md:px-6 lg:px-8 xl:px-12 py-2 hover:bg-gray-700 hover:text-green-300 '
+          className='text-xl sm:text-2xl md:text-3xl xl:text-4xl shadow-md shadow-gray-700 mb-4 font-bold text-gray-400 bg-gray-800 rounded-xl px-6 md:px-8 lg:px-10 2xl:px-14 py-2 md:py-3 xl:py-5 2xl:py-7 hover:bg-gray-700 hover:text-green-300 '
           onClick={() => {
             const time = new Date();
             time.setSeconds(time.getSeconds() + (counterState.pausa * 60));
