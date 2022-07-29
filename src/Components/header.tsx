@@ -8,7 +8,7 @@ export default function Header() {
       <div className='my-auto sm:ml-10 pb-2 flex flex-row'>
         <Link to={'/'}>
           <p className="relative group">
-            <span className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-blue-500'>Home</span>
+            <span className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl text-blue-500'>Home</span>
             <span className="absolute -bottom-1 left-1/2 w-0 h-2 bg-green-300 group-hover:w-1/2 group-hover:transition-all"></span>
             <span className="absolute -bottom-1 right-1/2 w-0 h-2 bg-green-300 group-hover:w-1/2 group-hover:transition-all"></span>
           </p>
