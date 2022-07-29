@@ -5,7 +5,7 @@ export default function Footer() {
   const currentYear = year.getFullYear()
 
   return (
-      <footer className=' text-gray-200 flex text-base sm:text-lg md:text-xl flex-col justify-center text-center pb-4 mt-8 md:mt-16 lg:mt-20'> 
+      <footer className=' text-gray-200 flex text-xs sm:text-sm xl:text-xl flex-col justify-center text-center pb-4 mt-2 xl:mt-20'> 
         &copy; Copyright {currentYear}, Jose Roberto Marques 
         <div className='flex mt-2 justify-center text-center'>
           <a className='mr-4' target="_blank" href='https://github.com/Jrm1992'>

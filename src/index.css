@@ -6,4 +6,7 @@
   background-color: #121214;
   -webkit-font-smoothing: antialiased;
 }
+p, h3, footer, button{
+  user-select: none;
+}
 
