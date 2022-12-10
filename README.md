@@ -1,6 +1,6 @@
 <br />
   <p align="center">
-    <img src="github\pomodoro-1.png">
+    <img src="github\cover.png">
     <img src="github\pomodoro-2.png">
        <br />
     <br />
