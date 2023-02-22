@@ -18,7 +18,6 @@
 
 
 # Autor:
----
 ![avatar](https://images.weserv.nl/?url=avatars.githubusercontent.com/u/103078485?v=4&h=100&w=100&fit=cover&mask=circle&maxage=7d
 )
  <br />
